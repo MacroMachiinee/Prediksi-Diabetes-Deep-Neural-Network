@@ -32,7 +32,9 @@ with col2 :
     ('Pilih Jenis Rentang Umur', '18 - 24', '25 - 29', '30 - 34', '35 - 39', '40 - 44', '45 - 49', '50 - 54', '55 - 59', '60 - 64', '65 - 69', '70 - 74', '75 - 79', '80 - Lebih Tua'))
   
 with col1 :
-  BloodPressure = st.number_input('Enter the Blood Pressure value')
+  _SMOKER3 = st.selectbox(
+    'Apakah Anda Merokok',
+    ('Tidak', '<20bks/thn', '20-30bks/thn'))
 
 with col2 :
   SkinThickness = st.number_input('Enter the Skin Thickness value')
