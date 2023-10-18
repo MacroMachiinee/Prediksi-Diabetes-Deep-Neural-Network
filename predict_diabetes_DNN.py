@@ -1,8 +1,6 @@
 # Importing the necessary Python modules.
 import streamlit as st
 
-# Import necessary functions from web_functions
-
 # Import pages
 from pages import home, data, prediksi, visualisasi, about
 
