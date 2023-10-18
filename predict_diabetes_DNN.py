@@ -15,7 +15,7 @@ st.set_page_config(
 )
 
 # Dictionary for pages
-pages= {
+pages = {
     "Home": home,
     "Data Info": data,
     "Prediction": prediksi,
