@@ -23,7 +23,7 @@ st.title("Prediksi Diabetes")
 col1, col2 = st.columns(2)
 
 with col1 :
-  option = st.selectbox(
+  SEXVAR = st.selectbox(
     'Jenis Kelamin',
     ('Pilih Jenis Kelamin', 'Laki Laki', 'Perempuan'))
 
