@@ -51,4 +51,4 @@ with col2 :
     'Riwayat Diabetes Pada Diri Sendiri',
     ('Pilih Riwayat Diabetes', 'Tidak', 'Iya', 'Tidak Tahu'))
 
-st.button('Diabetes Prediction Test')
+st.button('Prediksi Diabetes')
