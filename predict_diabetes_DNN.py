@@ -1,45 +1,30 @@
-# importing Important Liberaries
-import pickle
+# Importing the necessary Python modules.
 import streamlit as st
-import numpy as np
 
-# Load model
+# Import necessary functions from web_functions
 
-# Web Title
-st.title('Prediksi Diabetes Menggunakan Metode Deep Neural Network')
+# Import pages
+from Halaman import home, data, prediksi, visualisasi, about
 
-# Split Columns
-col1, col2 = st.columns(2)
+# Configure the app
+st.set_page_config(
+    page_title = 'Prediksi Diabetes Menggunakan Deep Neural Network',
+    page_icon = 'random',
+    layout = 'wide',
+    initial_sidebar_state = 'auto'
+)
 
-with col1 :
-  Pregnancies = st.number_input('Enter the Pregnancies value')
+# Dictionary for pages
+Halaman = {
+    "Home": home,
+    "Data Info": data,
+    "Prediction": prediksi,
+    "Visualisation": visualisasi,
+    "About me": about
+  }
 
-with col2 :
-  Glucose = st.number_input('Enter the Glucose value')
-  
-with col1 :
-  BloodPressure = st.number_input('Enter the Blood Pressure value')
-
-with col2 :
-  SkinThickness = st.number_input('Enter the Skin Thickness value')
-
-with col1 :
-  Insulin = st.number_input('Enter the Insulin value')
-
-with col2 :
-  BMI = st.number_input('Enter the BMI value')
-
-with col1 :
-  DiabetesPedigreeFunction = st.number_input('Enter the Diabetes Pedigree Function value')
-
-with col2 :
-  Age = st.number_input('Enter the Age value')
-
-st.button('Diabetes Prediction Test')
-
-  #if(diabetes_prediction[0]==1):
-    #diabetes_diagnosis = 'The patient has diabetes'
-  #else :
-    #diabetes_diagnosis = 'The patient does not have diabetes'
-
-#st.success(diabetes_diagnosis)
+# Create a sidebar
+# Add title to sidear
+st.sidebar.title("Navigasi")
+# Create radio option to select the page
+page = st.sidebar.radio("Halaman", list(Halaman.keys()))
