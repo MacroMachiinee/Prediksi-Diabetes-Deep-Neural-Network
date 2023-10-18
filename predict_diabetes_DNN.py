@@ -25,7 +25,7 @@ col1, col2 = st.columns(2)
 with col1 :
   option = st.selectbox(
     'Jenis Kelamin',
-    ('Laki Laki', 'Perempuan'))
+    ('Pilih Jenis Kelamin', 'Laki Laki', 'Perempuan'))
 
 with col2 :
   Glucose = st.number_input('Enter the Glucose value')
