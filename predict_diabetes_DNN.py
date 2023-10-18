@@ -26,5 +26,6 @@ pages = {
 # Create a sidebar
 # Add title to sidear
 st.sidebar.title("Navigasi")
+
 # Create radio option to select the page
 page = st.sidebar.radio("pages", list(pages.keys()))
