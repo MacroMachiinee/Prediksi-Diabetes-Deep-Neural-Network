@@ -28,7 +28,9 @@ with col1 :
     ('Pilih Jenis Kelamin', 'Laki Laki', 'Perempuan'))
 
 with col2 :
-  Glucose = st.number_input('Enter the Glucose value')
+  _AGEG5YR = st.selectbox(
+    'Rentang Umur',
+    ('Pilih Jenis Rentang Umur', '18 - 24', '25 - 29', '30 - 34', '35 - 39', '40 - 44', '45 - 49', '50 - 54', '55 - 59', '60 - 64', '65 - 69', '70 - 74', '75 - 79', '80 - Lebih Tua'))
   
 with col1 :
   BloodPressure = st.number_input('Enter the Blood Pressure value')
