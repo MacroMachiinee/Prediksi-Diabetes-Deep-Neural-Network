@@ -4,7 +4,7 @@ import streamlit as st
 import numpy as np
 
 # Load model
-model_diabetes = pickle.load(open('model_diabetes.sav', 'rb'))
+
 
 # Web Title
 st.title('Diabetes Prediction')
