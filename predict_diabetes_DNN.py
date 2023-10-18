@@ -11,6 +11,9 @@ import numpy as np
 # Web Title
 st.title('Prediksi Diabetes Dengan Deep Neural Network')
 
+# Membuat sidebar
+st.sidebar.title("Navigasi")
+
 # Split Columns
 col1, col2 = st.columns(2)
 
