@@ -9,15 +9,7 @@ import numpy as np
 # Load model
 
 # Web Title
-#st.title('Diabetes Prediction')
-
-# Configure the app
-st.set_page_config(
-    page_title = 'Prediksi Diabetes Menggunakan Deep Neural Network',
-    page_icon = 'random',
-    layout = 'wide',
-    initial_sidebar_state = 'auto'
-)
+st.title('Diabetes Prediction')
 
 # Split Columns
 col1, col2 = st.columns(2)
