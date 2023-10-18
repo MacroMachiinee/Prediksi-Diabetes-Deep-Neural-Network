@@ -9,7 +9,7 @@ import numpy as np
 # Load model
 
 # Web Title
-st.title('Diabetes Prediction')
+#st.title('Diabetes Prediction')
 
 # Configure the app
 st.set_page_config(
