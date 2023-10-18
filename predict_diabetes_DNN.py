@@ -11,7 +11,7 @@ from pages import home, data, predict, visualise, about
 
 # Configure the app
 st.set_page_config(
-    page_title = 'Prediksi Diabetes Menggunakan Deep Neural Network'
+    page_title = 'Prediksi Diabetes Menggunakan Deep Neural Network',
     page_icon = 'random',
     layout = 'wide',
     initial_sidebar_state = 'auto'
