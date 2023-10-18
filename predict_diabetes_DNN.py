@@ -35,6 +35,8 @@ with col1 :
 with col2 :
   Age = st.number_input('Enter the Age value')
 
+if st.button('Diabetes Prediction Test'):
+
   #if(diabetes_prediction[0]==1):
     #diabetes_diagnosis = 'The patient has diabetes'
   #else :
