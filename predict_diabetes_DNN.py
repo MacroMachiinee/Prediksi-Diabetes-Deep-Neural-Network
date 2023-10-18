@@ -3,11 +3,19 @@ import pickle
 import streamlit as st
 import numpy as np
 
+# Import pages
+from pages import home, data, predict, visualise, about
+
 # Load model
 
 
-# Web Title
-st.title('Diabetes Prediction')
+# Configure the app
+st.set_page_config(
+    page_title = 'Prediksi Diabetes Menggunakan Deep Neural Network,
+    page_icon = 'random',
+    layout = 'wide',
+    initial_sidebar_state = 'auto'
+)
 
 # Split Columns
 col1, col2 = st.columns(2)
