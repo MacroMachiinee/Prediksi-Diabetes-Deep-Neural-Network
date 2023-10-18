@@ -35,9 +35,9 @@ with col1 :
 with col2 :
   Age = st.number_input('Enter the Age value')
 
-  if(diabetes_prediction[0]==1):
-    diabetes_diagnosis = 'The patient has diabetes'
-  else :
-    diabetes_diagnosis = 'The patient does not have diabetes'
+  #if(diabetes_prediction[0]==1):
+    #diabetes_diagnosis = 'The patient has diabetes'
+  #else :
+    #diabetes_diagnosis = 'The patient does not have diabetes'
 
 st.success(diabetes_diagnosis)
