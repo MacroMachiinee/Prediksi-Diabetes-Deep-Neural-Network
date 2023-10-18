@@ -24,6 +24,9 @@ col1, col2 = st.columns(2)
 
 with col1 :
   Pregnancies = st.number_input('Enter the Pregnancies value')
+  option = st.selectbox(
+    'How would you like to be contacted?',
+    ('Email', 'Home phone', 'Mobile phone'))
 
 with col2 :
   Glucose = st.number_input('Enter the Glucose value')
