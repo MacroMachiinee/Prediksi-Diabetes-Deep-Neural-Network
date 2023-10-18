@@ -9,6 +9,4 @@ def app():
     st.title('Hubungi Saya')
     st.markdown('''### Name:
     Muhammad Rizky''')
-    st.markdown('''### Email:
-    sspdav02@gmail.com''')
     st.markdown('''### GitHub: [MacroMachiinee](https://github.com/MacroMachiinee)''')
