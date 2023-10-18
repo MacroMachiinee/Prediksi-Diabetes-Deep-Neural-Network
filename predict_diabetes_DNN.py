@@ -9,7 +9,7 @@ import numpy as np
 # Load model
 
 # Web Title
-st.title('Diabetes Prediction')
+st.title('Prediksi Diabetes Dengan Deep Neural Network')
 
 # Split Columns
 col1, col2 = st.columns(2)
