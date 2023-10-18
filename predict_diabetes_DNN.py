@@ -4,7 +4,7 @@ import streamlit as st
 # Import necessary functions from web_functions
 
 # Import pages
-from Halaman import home, data, prediksi, visualisasi, about
+from pages import home, data, prediksi, visualisasi, about
 
 # Configure the app
 st.set_page_config(
@@ -15,7 +15,7 @@ st.set_page_config(
 )
 
 # Dictionary for pages
-Halaman = {
+pages= {
     "Home": home,
     "Data Info": data,
     "Prediction": prediksi,
@@ -27,4 +27,4 @@ Halaman = {
 # Add title to sidear
 st.sidebar.title("Navigasi")
 # Create radio option to select the page
-page = st.sidebar.radio("Halaman", list(Halaman.keys()))
+page = st.sidebar.radio("pages", list(pages.keys()))
