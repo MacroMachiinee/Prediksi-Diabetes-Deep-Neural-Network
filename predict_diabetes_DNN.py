@@ -40,4 +40,4 @@ with col2 :
   #else :
     #diabetes_diagnosis = 'The patient does not have diabetes'
 
-st.success(diabetes_diagnosis)
+#st.success(diabetes_diagnosis)
