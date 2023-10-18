@@ -17,7 +17,7 @@ st.write("Ada dua jenis diabetes, yaitu diabetes tipe 1 dan diabetes tipe 2. Dia
 st.write("Dataset ini berasal dari POSBINDU Puskesmas Mergangsan. Tujuan dari kumpulan data ini adalah untuk memprediksi secara diagnostik apakah pasien menderita diabetes atau tidak, berdasarkan pengukuran diagnostik tertentu yang disertakan dalam kumpulan data. Beberapa batasan ditempatkan pada pemilihan contoh-contoh ini dari basis data yang lebih besar.")
 st.write("-----------------------------------------------------------------------------------------------------------")
 
-st.write(""<span style="font-size: 20px;">Prediksi Diabetes</span>""")
+st.write("Prediksi Diabetes")
 
 # Split Columns
 col1, col2 = st.columns(2)
