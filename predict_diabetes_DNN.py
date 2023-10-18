@@ -37,18 +37,18 @@ with col1 :
     ('Tidak', '<20bks/thn', '20-30bks/thn'))
 
 with col2 :
-  SkinThickness = st.number_input('Enter the Skin Thickness value')
+  _TOTINDA = st.selectbox(
+    'Apakah Melakukan Aktifitas Fisik',
+    ('Tidak', 'Ya, TIdak Setiap Hari', 'Ya, Setiap Hari'))
 
 with col1 :
-  Insulin = st.number_input('Enter the Insulin value')
+  _BMI5CAT = st.selectbox(
+    'Indeks Masa Tubuh Anda',
+    ('Pilih Indeks Masa Tubuh', 'Kekurangan Berat Badan', 'Berat Badan Normal', 'Kelebihan Berat Badan', 'Obesitas'))
 
 with col2 :
-  BMI = st.number_input('Enter the BMI value')
+  DIABETE4 = st.selectbox(
+    'Riwayat Diabetes Pada Diri Sendiri',
+    ('Pilih Riwayat Diabetes', 'Tidak', 'Iya', 'Tidak Tahu'))
 
-with col1 :
-  DiabetesPedigreeFunction = st.number_input('Enter the Diabetes Pedigree Function value')
-
-with col2 :
-  Age = st.number_input('Enter the Age value')
-  
 st.button('Diabetes Prediction Test')
