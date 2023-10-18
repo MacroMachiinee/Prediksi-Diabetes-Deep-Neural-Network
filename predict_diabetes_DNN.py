@@ -14,6 +14,14 @@ st.title('Prediksi Diabetes Dengan Deep Neural Network')
 # Membuat sidebar
 st.sidebar.title("Navigasi")
 
+pages = {
+    "Home": home,
+    "Data Info": data,
+    "Prediction": predict,
+    "Visualisation": visualise,
+    "About me": about
+}
+
 # Split Columns
 col1, col2 = st.columns(2)
 
