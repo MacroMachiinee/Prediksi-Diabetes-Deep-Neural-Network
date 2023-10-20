@@ -4,7 +4,7 @@ import streamlit as st
 import numpy as np
 
 # Load model
-model_diabetes_dnn = pickle.load(open('model_diabetes_dnn.sav', 'wb'))
+model_diabetes_dnn = pickle.read(open('model_diabetes_dnn.sav', 'wb'))
 
 # Web Title
 st.title('Prediksi Diabetes Dengan Deep Neural Network')
