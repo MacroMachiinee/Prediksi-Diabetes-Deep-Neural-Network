@@ -53,7 +53,7 @@ with col2 :
 diabetes_diagnosis = ''
 
 if st.button('Diabetes Prediction Test'):
-  diabetes_prediction = model_diabetes.predict([[SEXVAR,_AGEG5Y,_SMOKER3,_TOTINDA,_BMI5CAT,EMPLOY1,DIABETE4]])
+  diabetes_prediction = model_diabetes.predict([[SEXVAR,_AGEG5Y,_SMOKER3,_TOTINDA,_BMI5CAT,DIABETE4]])
   
   if(diabetes_prediction[0]==1):
     diabetes_diagnosis = 'The patient has diabetes'
