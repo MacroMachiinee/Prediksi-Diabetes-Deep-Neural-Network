@@ -49,4 +49,15 @@ with col2 :
     'Riwayat Diabetes Pada Diri Sendiri',
     ('Pilih Riwayat Diabetes', 'Tidak', 'Iya', 'Tidak Tahu'))
 
-st.button('Prediksi Diabetes')
+# Prediction
+diabetes_diagnosis = ''
+
+if st.button('Diabetes Prediction Test'):
+  diabetes_prediction = model_diabetes.predict([[SEXVAR,_AGEG5Y,_SMOKER3,_TOTINDA,_BMI5CAT,EMPLOY1,DIABETE4]])
+  
+  if(diabetes_prediction[0]==1):
+    diabetes_diagnosis = 'The patient has diabetes'
+  else :
+    diabetes_diagnosis = 'The patient does not have diabetes'
+
+st.success(diabetes_diagnosis)
