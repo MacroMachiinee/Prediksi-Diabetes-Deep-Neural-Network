@@ -2,6 +2,7 @@
 import pickle
 import streamlit as st
 import numpy as np
+import keras
 
 # Load model
 model_diabetes_dnn = pickle.load(open('model_diabetes_dnn.sav', 'rb'))
