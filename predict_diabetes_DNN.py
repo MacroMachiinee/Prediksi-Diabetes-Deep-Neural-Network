@@ -3,9 +3,6 @@ import pickle
 import streamlit as st
 import numpy as np
 
-# Import pages
-#from pages import home, data, predict, visualise, about
-
 # Load model
 
 # Web Title
