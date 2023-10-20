@@ -3,6 +3,9 @@ import pickle
 import streamlit as st
 import numpy as np
 import keras
+import keras.backend as K
+import tensorflow as tf
+import tensorflow.keras as keras
 
 # Load model
 model_diabetes_dnn = pickle.load(open('model_diabetes_dnn.sav', 'rb'))
