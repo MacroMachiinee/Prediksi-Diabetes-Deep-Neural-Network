@@ -8,7 +8,7 @@ import tensorflow as tf
 import tensorflow.keras as keras
 
 # Load model
-model_diabetes_dnn = pickle.load(open('model_diabetes_dnn.sav', 'rb'))
+model_diabetes = pickle.load(open('model_diabetes.sav', 'rb'))
 
 # Web Title
 st.title('Prediksi Diabetes Dengan Deep Neural Network')
